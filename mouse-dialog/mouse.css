@@ -1,0 +1,148 @@
+body {
+  background: #fff;
+  font: 10pt "Lucida Grande";
+}
+
+#mouse-dialog {
+  background-color: #EDEDED;
+  border-top: 1px solid #E1E1E1;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  margin: 4em auto;
+  width: 670px;
+  -webkit-box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  margin: 0;
+  font-size: 1em;
+  font-weight: normal;
+  text-align: center;
+  text-shadow: 0 1px 0 #DCDCDA;
+}
+
+header, section, footer {
+  border-color: #AFAFAF;
+  border-style: solid;
+  border-width: 0 1px;
+  padding: 10px;
+}
+
+header {
+  background: -webkit-gradient(linear, left top, left bottom, from(#D0D0D0), to(#A7A7A7));
+  border-top: 1px solid #F4F4F4;
+  border-bottom: 1px solid #515151;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  overflow: hidden;
+  padding: 6px 10px;
+}
+
+  header menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+    header menu li {
+      display: inline;
+    }
+
+nav {
+  overflow: hidden;
+  padding-bottom: 1px;
+}
+  
+  a {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FEFEFE), to(#B8B8B8));
+    border: 1px solid #4D4D4D;
+    border-radius: 3px;
+    color: black;
+    padding: 3px 10px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #DCDCD9;
+    float: left;
+    -webkit-box-shadow: 0 1px 0 #B9B9B9;
+  }
+  
+  a.previous {
+    -webkit-transform: scaleX(-1);
+    border-left-style: none;
+  }
+  
+  a.previous, a.next {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  a.next {
+    color: #939393;
+    margin-right: 8px;
+  }
+
+  input[type='search'] {
+    font-size: 1.2em;
+    float: right;
+  }
+
+section {
+  overflow: hidden;
+}
+
+footer {
+  padding-top: 0;
+  border-bottom-width: 1px;
+}
+
+fieldset {
+  border-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#speed {
+  padding-top: 20px;
+}
+
+  #speed fieldset {
+    float: left;
+    margin: 0 30px;
+    width: 150px;
+  }
+
+  #speed label {
+    display: block;
+    text-align: center;
+    margin-bottom: 4px;
+  }
+
+  #speed input {
+    width: 100%;
+  }
+
+#gesture-settings {
+  background-color: #E6E6E6;
+  border-radius: 4px;
+  border: 1px solid #C7C7C7;
+  float: left;
+  padding: 0 10px;
+  height: 366px;
+  width: 326px;
+}
+
+  #gesture-settings legend {
+    padding-top: 10px;
+  }
+
+  #gesture-settings fieldset {
+    padding: 2px 0;
+  }
+
+  #gesture-settings legend {
+    font-weight: bold;
+  }
+
+#demo {
+  border: 1px solid #A3ADB6;
+  float: right;
+}

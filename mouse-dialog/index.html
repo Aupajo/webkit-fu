@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Preview</title>
+    <link rel="stylesheet" type="text/css" href="mouse.css" media="screen" charset="utf-8">
+  </head>
+  <body>
+    
+    <article id="mouse-dialog">
+      <header>
+        <h1>Mouse</h1>
+        <nav>
+          <menu type="list">
+            <li><a href="#" class="previous">&#9654;</a></li>
+            <li><a href="#" class="next">&#9654;</a></li>
+            <li><a href="#">Show All</a></li>
+          </menu>
+          <input type="search" results="5">
+        </nav>
+      </header>
+      
+      <section id="speed">
+        <fieldset>
+          <label for="tracking">Tracking</label>
+          <input type="range" id="tracking" min="1" max="10" value="5">
+        </fieldset>
+        
+        <fieldset>
+          <label for="scrolling">Scrolling</label>
+          <input type="range" id="scrolling" min="1" max="8" value="3">
+        </fieldset>
+        
+        <fieldset>
+          <label for="double-click">Double-Click</label>
+          <input type="range" id="double-click" min="1" max="11" value="8">
+        </fieldset>
+      </section>
+      
+      <section id="gestures">
+        <article id="gesture-settings">
+          <fieldset>
+            <legend>One Finger</legend>
+            
+            <fieldset>
+              <input type="checkbox" id="secondary-click" checked>
+              <label for="secondary-click">Secondary click</label>
+              <select>
+                <option>Right</option>
+                <option>Left</option>
+              </select>
+            </fieldset>
+            
+            <fieldset>
+              <input type="checkbox" id="scroll" checked>
+              <label for="scroll">Scroll</label>
+              <select>
+                <option>with momentum</option>
+                <option>without momentum</option>
+              </select>
+            </fieldset>
+            
+            <fieldset>
+              <input type="checkbox" id="screen-zoom" checked>
+              <label for="screen-zoom">Screen Zoom</label>
+              <input type="button" value="Options...">
+            </fieldset>
+          </fieldset>
+        
+          <fieldset>
+            <legend>Two Fingers</legend>
+            <input type="checkbox" id="swipe" checked>
+            <label for="swipe">Swipe Left/Right to Navigate</label>
+          </fieldset>
+        </article>
+      
+        <video src="video.mov" id="demo" type="video/mp4" height="366" autoplay loop>
+      </section>
+      
+      <footer>
+        Mouse battery level: 50%
+      </footer>
+    </article>
+    
+  </body>
+</html>
