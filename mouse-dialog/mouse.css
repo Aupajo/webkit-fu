@@ -4,13 +4,20 @@ body {
   margin: 0;
 }
 
+header, section, article, header, footer, video {
+  display: block; // Firefox
+}
+
 #mouse-dialog {
   background-color: #EDEDED;
   border-top: 1px solid #E1E1E1;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
+  -moz-border-radius-topleft: 6px;
+  -moz-border-radius-topright: 6px;
   margin: 4em auto;
   width: 670px;
+  -moz-box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
   -webkit-box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
 }
 
@@ -31,10 +38,13 @@ header, section, footer {
 
 header {
   background: -webkit-gradient(linear, left top, left bottom, from(#D0D0D0), to(#A7A7A7));
+  background: -moz-linear-gradient(top, #D0D0D0, #A7A7A7);
   border-top: 1px solid #F4F4F4;
   border-bottom: 1px solid #515151;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
   overflow: hidden;
   padding: 6px 10px;
 }
@@ -56,8 +66,10 @@ nav {
   
   nav a {
     background: -webkit-gradient(linear, left top, left bottom, from(#FEFEFE), to(#B8B8B8));
+    background: -moz-linear-gradient(top, #FEFEFE, #B8B8B8);
     border: 1px solid #4D4D4D;
     border-radius: 3px;
+    -moz-border-radius: 3px;
     color: black;
     padding: 3px 10px;
     text-decoration: none;
@@ -68,6 +80,7 @@ nav {
   
   nav a.previous {
     -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
     border-left-style: none;
   }
   
@@ -124,6 +137,7 @@ fieldset {
 #gesture-settings {
   background-color: #E6E6E6;
   border-radius: 4px;
+  -moz-border-radius: 4px;
   border: 1px solid #C7C7C7;
   float: left;
   padding: 0 10px;
@@ -146,6 +160,7 @@ fieldset {
 #demo {
   border: 1px solid #A3ADB6;
   float: right;
+  width: 292px;
 }
 
 .note {
